@@ -7,74 +7,69 @@ tags: 博客
 ---
 # 系统分析与设计HW2
 
----
----
 
 # 1简答题
 
 ## 简述瀑布模型、增量模型、螺旋模型（含原型方法）的优缺点。
 
- - **瀑布模型**
+- **瀑布模型**
 
-**优点**
->* 降低软件开发的复杂程度，提高软件开发过程的透明性，提高软件开发过程的可管理性
->* 推迟软件实现，强调在软件实现前必须进行分析和设计工作
->* 以项目的阶段评审和文档控制为手段有效地对整个开发过程进
-行指导，保证了阶段之间的正确衔接，能够及时发现并纠正开发过程中存在的缺陷，使产品达到预期的质量要求
+  **优点**
+    * 降低软件开发的复杂程度，提高软件开发过程的透明性，提高软件开发过程的可管理性
+    * 推迟软件实现，强调在软件实现前必须进行分析和设计工作
+    * 以项目的阶段评审和文档控制为手段有效地对整个开发过程进行指导，保证了阶段之间的正确衔接，能够及时发现并纠正开发过程中存在的缺陷，使产品达到预期的质量要求
 
- **缺点**
->* 强调过程活动的线性顺序
->* 缺乏灵活性，特别是无法解决软件需求不明确或不准确的问题
->* 风险控制能力较弱
->* 瀑布模型中的软件活动是文档驱动的，当阶段之间规定过多的
-文档时，会极大地增加系统的工作量
->* 管理人员如果仅仅以文档的完成情况来评估项目完成进度，往
-往会产生错误的结论
+  **缺点**
+    * 强调过程活动的线性顺序
+    * 缺乏灵活性，特别是无法解决软件需求不明确或不准确的问题
+    * 风险控制能力较弱
+    * 瀑布模型中的软件活动是文档驱动的，当阶段之间规定过多的文档时，会极大地增加系统的工作量
+    * 管理人员如果仅仅以文档的完成情况来评估项目完成进度，往往会产生错误的结论
 
- - **增量模型**
+- **增量模型**
  
- **优点**
->* 增强客户对系统的信心
->* 降低系统失败风险
->* 提高系统可靠性
->* 提高系统的稳定性和可维护性
+  **优点**
+    * 增强客户对系统的信心
+    * 降低系统失败风险
+    * 提高系统可靠性
+    * 提高系统的稳定性和可维护性
 
- **缺点**
->* 增量粒度难以选择
->* 确定所有的基本业务服务比较困难
+  **缺点**
+    * 增量粒度难以选择
+    * 确定所有的基本业务服务比较困难
 
- - **螺旋模型**
+- **螺旋模型**
  
- **优点**
->* 引入风险管理
->* 设计上的灵活性,可以在项目的各个阶段进行变更
->* 成本计算变得简单容易
+  **优点**
+    * 引入风险管理
+    * 设计上的灵活性,可以在项目的各个阶段进行变更
+    * 成本计算变得简单容易
 
- **缺点**
->* 用螺旋模型需要具有相当丰富的风险评估经验和专门知识，在风险较大的项目开发中，如果未能够及时标识风险，势必造成重大损失
->* 过多的迭代次数会增加开发成本，延迟提交时间
+  **缺点**
+    * 用螺旋模型需要具有相当丰富的风险评估经验和专门知识，在风险较大的项目开发中，如果未能够及时标识风险，势必造成重大损失
+    * 过多的迭代次数会增加开发成本，延迟提交时间
 
 ## 简述 UP 的三大特点，其中哪些内容体现了用户驱动的开发，哪些内容体现风险驱动的开发
  >UP(统一模型)将软件开发过程要素和软件工件要素整合在统一的软件工程框架中，是一个面向对象的基于 web 的程序开发方法论。
  
  - **UP的三大特点**
 
-1.用例驱动Use-case-driven
-* Use-case-driven means the development team employs the use cases from requirements gathering through code and test
+1. 用例驱动Use-case-driven
+   * Use-case-driven means the development team employs the use cases from requirements gathering through code and test
 
- 2.以架构为中心Architecture-centric
-* software architecture provides the central point around which all other development evolves
+2. 以架构为中心Architecture-centric
+   * software architecture provides the central point around which all other development evolves
  
- 3.迭代式增量Iterative and Evolutionary
-* An iterative and evolutionary approach allows start of development with incomplete, imperfect knowledge
+3. 迭代式增量Iterative and Evolutionary
+   * An iterative and evolutionary approach allows start of development with incomplete, imperfect knowledge
 
  - **体现用户驱动的开发**
  
- 用例驱动和迭代式增量
+用例驱动和迭代式增量
  
  - **体现风险驱动的开发**
  
- 以架构为中心
+以架构为中心
 
 ## UP 四个阶段的划分准则是什么？关键的里程碑是什么？
  - **UP 四个阶段的划分准则及关键里程碑**
