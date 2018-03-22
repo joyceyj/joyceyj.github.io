@@ -1,17 +1,22 @@
+---
+layout: post
+title: 系统分析与设计HW2
+date: 2018-03-22
+categories: HW
+tags: 博客
+---
 # 系统分析与设计HW2
 
-标签（空格分隔）： HW
-
 ---
-**目录**
 ---
-[TOC]
 
-#1简答题
-##简述瀑布模型、增量模型、螺旋模型（含原型方法）的优缺点。
+# 1简答题
+
+## 简述瀑布模型、增量模型、螺旋模型（含原型方法）的优缺点。
 
  - **瀑布模型**
- **优点**
+
+**优点**
 >* 降低软件开发的复杂程度，提高软件开发过程的透明性，提高软件开发过程的可管理性
 >* 推迟软件实现，强调在软件实现前必须进行分析和设计工作
 >* 以项目的阶段评审和文档控制为手段有效地对整个开发过程进
@@ -27,7 +32,8 @@
 往会产生错误的结论
 
  - **增量模型**
-  **优点**
+ 
+ **优点**
 >* 增强客户对系统的信心
 >* 降低系统失败风险
 >* 提高系统可靠性
@@ -38,7 +44,8 @@
 >* 确定所有的基本业务服务比较困难
 
  - **螺旋模型**
- - **优点**
+ 
+ **优点**
 >* 引入风险管理
 >* 设计上的灵活性,可以在项目的各个阶段进行变更
 >* 成本计算变得简单容易
@@ -51,6 +58,7 @@
  >UP(统一模型)将软件开发过程要素和软件工件要素整合在统一的软件工程框架中，是一个面向对象的基于 web 的程序开发方法论。
  
  - **UP的三大特点**
+
 1.用例驱动Use-case-driven
 * Use-case-driven means the development team employs the use cases from requirements gathering through code and test
 
@@ -61,8 +69,11 @@
 * An iterative and evolutionary approach allows start of development with incomplete, imperfect knowledge
 
  - **体现用户驱动的开发**
+ 
  用例驱动和迭代式增量
+ 
  - **体现风险驱动的开发**
+ 
  以架构为中心
 
 ## UP 四个阶段的划分准则是什么？关键的里程碑是什么？
@@ -70,7 +81,7 @@
 <table>
     <thead>
         <tr>
-            <th style="width: 50px;">阶段</th>
+            <th style="width: 80px;">阶段</th>
             <th style="text-align: center;width: 340px;">划分准则</th>
             <th style="text-align: center;">里程碑</th>
         </tr>
@@ -115,4 +126,4 @@
 ![Kanban][1]
 
 
-  [1]: http://wx4.sinaimg.cn/mw690/a111daecly1fplyiaz0xmj20o4072dg3.jpg
+  [1]: http://wx2.sinaimg.cn/large/a111daecly1fpm0lyga3tj20zh0a7gme.jpg
