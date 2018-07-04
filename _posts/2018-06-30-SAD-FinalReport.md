@@ -85,6 +85,7 @@ tag: 系统分析与设计
 
 ## 工作清单
 * 完成原型设计：[项目原型设计](https://starpick.github.io/dashboard/7_UI%20design)
+* 部分前端组件实现
 * 测试并修复多个bug：
 	* 关注者页面（follow）和粉丝页面（follower）关注状态问题和关注取关的按钮动态变化问题
 	* 首页（home）和查看用户的starpick的评论与对应starpick不匹配问题
