@@ -34,15 +34,15 @@ tag: Data Mining
 * 论文中模拟实验效果：
 	* 利用边缘检测和聚类算法减少样本，重构训练集：
 	
-		<img src='边缘检测1.png' width=50% hegiht=50% align=center />
+		<img src='/image/DataMing/边缘检测1.png' width=50% hegiht=50% align=center />
 	
 	* 原始训练集及SVM训练超平面与重构训练集及SVM训练超平面：
 	
-		<img src='边缘检测2.png' width=50% hegiht=50% align=center />
+		<img src='/image/DataMing/边缘检测2.png' width=50% hegiht=50% align=center />
 	
 	* 训练准确率及训练时间复杂度对比：
 	
-		<img src='边缘检测3.png' width=50% hegiht=50% align=center />
+		<img src='/image/DataMing/边缘检测3.png' width=50% hegiht=50% align=center />
 	
 * 算法存在的问题：
 	* 虽然可以减少大量样本，并且加快训练的速度，但是前期数据处理需要花费大量时间
@@ -98,7 +98,7 @@ tag: Data Mining
 	* SK-learn官方文档：http://scikit-learn.org/dev/modules/neural_networks_supervised.html#classification
 * 原理：多层感知机（MLP，Multilayer Perceptron）也叫人工神经网络（ANN，Artificial Neural Network），除了输入输出层，它中间可以有多个隐层，最简单的MLP只含一个隐层，即三层的结构，如下图：
 
-	<img src='mlp1.jpeg' width=50% hegiht=50% align=center />
+	<img src='/image/DataMing/mlp1.jpeg' width=50% hegiht=50% align=center />
 	
 	多层感知机层与层之间是全连接的，假设输入层用向量X表示，则隐藏层的输出就是f(W1X+b1)，W1是权重（也叫连接系数），b1是偏置，函数f 可以是常用的sigmoid函数或者tanh函数。隐藏层到输出层可以看成是一个多类别的逻辑回归，也即softmax回归，所以输出层的输出就是softmax(W2X1+b2)，X1表示隐藏层的输出f(W1X+b1)。解决最优化问题是用梯度下降法（SGD）：首先随机初始化所有参数，然后迭代地训练，不断地计算梯度和更新参数，直到满足某个条件为止（比如误差足够小、迭代次数足够多时）。
 * 实现：
@@ -110,14 +110,14 @@ tag: Data Mining
 	clf = MLPClassifier(solver='adam', alpha=1e-5,hidden_layer_sizes=(100,100), random_state=1,verbose=True,max_iter=100)
 	```
 	
-		<img src='mlp2.png' width=50% hegiht=50% align=center />
+		<img src='/image/DataMing/mlp2.png' width=50% hegiht=50% align=center />
 	
 		经过22个迭代，模型收敛，损失函数loss=0.22404616，模型训练大约6分钟，预测准确率为0.17229
 	* 使用2个隐藏层，各500个神经元
 	```
 	clf = MLPClassifier(solver='adam', alpha=1e-5,hidden_layer_sizes=(500,500), random_state=1,verbose=True,max_iter=100)
 	```
-	<img src='mlp3.png' width=50% hegiht=50% align=center />
+	<img src='/image/DataMing/mlp3.png' width=50% hegiht=50% align=center />
 	
 		经过9个迭代，模型收敛，损失函数loss=0.33467016，模型训练大约9分钟，预测准确率为0.21360
 	
