@@ -110,7 +110,7 @@ tag: Data Mining
 	clf = MLPClassifier(solver='adam', alpha=1e-5,hidden_layer_sizes=(100,100), random_state=1,verbose=True,max_iter=100)
 	```
 	
-		<img src='/image/DataMing/mlp2.png' width=50% hegiht=50% align=center />
+	<img src='/image/DataMing/mlp2.png' width=50% hegiht=50% align=center />
 	
 		经过22个迭代，模型收敛，损失函数loss=0.22404616，模型训练大约6分钟，预测准确率为0.17229
 	* 使用2个隐藏层，各500个神经元
