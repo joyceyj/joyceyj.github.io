@@ -28,16 +28,20 @@ Explanation: The answer is "wke", with the length of 3.
              Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
              
 ## 题目理解
+
 给定字符串，找到没有重复的字符的子串，返回符合的子串的最大长度
 
 ## 解题思路1
+
 我首先想到的就是暴力求解：
 
 	1.求子串：遍历字符串，对每个字符作为子串的头，用substr（start，length）得到子串，
 	如果某个子串中出现重复字符，则从下一个字符开始作为子串的头；	
 	2.判断子串是否有重复字符：遍历子串，O(n^2)，这一步可以使用stl容器map或set降低时间复杂度；
 	3.比较子串长度。
+	
 ## 代码
+
 ```C++
 bool repeat(string s) {
     int len = s.size();
@@ -72,7 +76,9 @@ public:
     }
 };
 ```
+
 ## 改进：使用STL容器
+
 ```
 class Solution {
 public:
@@ -109,8 +115,11 @@ public:
 ```
 
 ## 解题思路2
+
 建立hash map，用数组记录ascii码表中字符在字符串中最近一次出现的位置，在字符出现的两次位置下标相减就得到了子字符串的长度
+
 ## 代码
+
 ```C++
 class Solution {
 public:
@@ -137,6 +146,7 @@ public:
 
 
 ## 时间复杂度
+
 ||时间复杂度|leetcode|note|
 |----|----|----|----|
 |思路1.1|O(n^4)|986 / 987 test cases passed|当字符串长时会发生超时|
