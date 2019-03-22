@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sizeof相关
+title: Bubble Sort冒泡排序
 date: 2015-11-06
 categories: C_language
 tag: C C++
