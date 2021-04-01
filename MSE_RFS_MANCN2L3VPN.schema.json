@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/RES/1/MSE_RFS_MANCN2L3VPN.schema.json",
+    "title": "RES/MSE_RFS_MANCN2L3VPN",
+    "description": "城域网核心:MSE_RFS_MANCN2L3VPN",
+    "version": "1.0",
+    "type": "object",
+    "properties": {
+        "schemaPath": {
+            "type": "string",
+            "description": "使用的schema文件路径"
+        },
+        "UPETHERNETPORT": {
+            "type": "object",
+            "description": "上联以太网端口",
+            "properties": {
+                "VPNCODE": {
+                    "type": "object",
+                    "description": "VPN网号",
+                    "properties": {
+                        "VRF": {
+                            "type": "string",
+                            "description": "VRF"
+                        },
+                        "RD": {
+                            "type": "string",
+                            "description": "RD"
+                        },
+                        "IMPORTRT": {
+                            "type": "string",
+                            "description": "IMPORT RT"
+                        },
+                        "EXPORTRT": {
+                            "type": "string",
+                            "description": "EXPORT RT"
+                        }
+                    }
+                }
+            }
+        },
+        "CUSTOMIPSEG": {
+            "type": "string",
+            "description": "用户IP段"
+        }
+    }
+}
